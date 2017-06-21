@@ -9,7 +9,7 @@
         <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
             <p class="text-success"><%: SuccessMessage %></p>
         </asp:PlaceHolder>
-
+        
     </div>
 
     <div class="row">
@@ -133,5 +133,5 @@
 
         </div>
     </div>
-
+    
 </asp:Content>
