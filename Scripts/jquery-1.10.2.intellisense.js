@@ -12,6 +12,7 @@
  * below are for informational purposes only.
  *
  * NUGET: END LICENSE TEXT */
+
 intellisense.annotate(jQuery, {
   'ajax': function() {
     /// <signature>
