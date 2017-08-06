@@ -4,7 +4,6 @@ using System.Web;
 using System.Web.Routing;
 using Microsoft.AspNet.FriendlyUrls;
 
-
 namespace QRrad
 
 {
