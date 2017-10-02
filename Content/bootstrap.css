@@ -6796,21 +6796,27 @@ td.visible-print {
   .visible-print {
     display: block !important;
   }
+  
   tr.visible-print {
     display: table-row !important;
   }
+  
   th.visible-print,
   td.visible-print {
     display: table-cell !important;
   }
+  
   .hidden-print {
     display: none !important;
   }
+  
   tr.hidden-print {
     display: none !important;
   }
+  
   th.hidden-print,
   td.hidden-print {
     display: none !important;
   }
+  
 }
