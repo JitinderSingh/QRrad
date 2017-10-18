@@ -8,7 +8,6 @@
         <table class="nav-justified">
             <tr>
                 <td style="width: 375px" >
-
         <asp:DataList ID="DataList1" OnItemCommand="DataList1_ItemCommand"
             OnItemDataBound="DataList1_ItemDataBound" RepeatDirection="Horizontal" runat="server">
 
@@ -19,7 +18,6 @@
                     Text='<%# Bind("PageText") %>'></asp:LinkButton>
             </ItemTemplate>
         </asp:DataList>
-
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="LN" ForeColor="#333333" GridLines="None" OnPageIndexChanging="GridView1_PageIndexChanging" OnRowCreated="GridView1_RowCreated" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
@@ -143,9 +141,13 @@
             
 
         </ItemTemplate>
+        
         <PagerSettings Mode="NextPreviousFirstLast" />
+        
         <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+        
         <RowStyle BackColor="#E3EAEB" />
+        
     </asp:FormView>
     <asp:SqlDataSource ID="SqlDataSourceUsers" runat="server" ConnectionString="Data Source=QRradDB.db.11805746.hostedresource.com;Initial Catalog=QRradDB;Persist Security Info=True;User ID=QRradDB;Password=QR!Qoder987" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [Users] WHERE ([LN] = @LN)" OldValuesParameterFormatString="original_{0}" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Users] WHERE [UserID] = @original_UserID AND [LN] = @original_LN AND [FN] = @original_FN AND [CellNum] = @original_CellNum AND [Email] = @original_Email AND [Type] = @original_Type AND (([FormalN] = @original_FormalN) OR ([FormalN] IS NULL AND @original_FormalN IS NULL)) AND (([PhoneNum] = @original_PhoneNum) OR ([PhoneNum] IS NULL AND @original_PhoneNum IS NULL)) AND (([PhotoUrl] = @original_PhotoUrl) OR ([PhotoUrl] IS NULL AND @original_PhotoUrl IS NULL))" InsertCommand="INSERT INTO [Users] ([LN], [FN], [CellNum], [Email], [Type], [FormalN], [PhoneNum], [PhotoUrl]) VALUES (@LN, @FN, @CellNum, @Email, @Type, @FormalN, @PhoneNum, @PhotoUrl)" UpdateCommand="UPDATE [Users] SET [LN] = @LN, [FN] = @FN, [CellNum] = @CellNum, [Email] = @Email, [Type] = @Type, [FormalN] = @FormalN, [PhoneNum] = @PhoneNum, [PhotoUrl] = @PhotoUrl WHERE [UserID] = @original_UserID AND [LN] = @original_LN AND [FN] = @original_FN AND [CellNum] = @original_CellNum AND [Email] = @original_Email AND [Type] = @original_Type AND (([FormalN] = @original_FormalN) OR ([FormalN] IS NULL AND @original_FormalN IS NULL)) AND (([PhoneNum] = @original_PhoneNum) OR ([PhoneNum] IS NULL AND @original_PhoneNum IS NULL)) AND (([PhotoUrl] = @original_PhotoUrl) OR ([PhotoUrl] IS NULL AND @original_PhotoUrl IS NULL))">
         <DeleteParameters>
