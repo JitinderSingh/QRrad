@@ -31,9 +31,7 @@ public partial class Users : System.Web.UI.Page
                 gvReturnedUser.DataBind();
             }
         } 
-    
-    }
-   
+    } 
     protected void bInsertImage_Click(object sender, EventArgs e)
     {
 
@@ -58,11 +56,8 @@ public partial class Users : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-
         //string UserID = ((TextBox)DetailsView1.Rows[1].Cells[2].Controls[0]).Text;
-
         //string UserID = DetailsView1.Rows[0].Cells[1].Text.ToString();
-
         //Image1.ImageUrl = "~/Handler.ashx?UserID=" +UserID;
         
         if (FileUpload1.HasFile)
